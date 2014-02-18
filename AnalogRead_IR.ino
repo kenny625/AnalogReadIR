@@ -1,7 +1,7 @@
 int sensorPin1 = A0;
 int sensorPin2 = A1;
 int sensorPin3 = A2;
-int sensorPin4 = A3;
+int sensorPin4 = A4;
 int sensorValue1 = 0;
 int sensorValue2 = 0;
 int sensorValue3 = 0;
@@ -35,16 +35,16 @@ void loop()
   sum3 += sensorValue3;
   sum4 += sensorValue4;
   delay(30);
-//  Serial.println(sensorValue);
+//  Serial.println(sensorValue4);
   count++;
   if(count == 10){
     count = 0;
     JSONString = String1+ sum1/10 + String2 + sum2/10 + String3 + sum3/10 + String4 + sum4/10 + String5;
     Serial.println(JSONString);
-    int sum1 = 0;
-    int sum2 = 0;
-    int sum3 = 0;
-    int sum4 = 0;
+    sum1 = 0;
+    sum2 = 0;
+    sum3 = 0;
+    sum4 = 0;
   }
   delay(30);      
 }
