@@ -54,50 +54,9 @@ void loop()
     }
     sum[i] += filteredSensorValue[i];
   }
-//  sensorValue1 = analogRead(sensorPin1);
-//  sensorValue2 = analogRead(sensorPin2);
-//  sensorValue3 = analogRead(sensorPin3);
-//  sensorValue4 = analogRead(sensorPin4);
-//  if(preSensorValue1 == 0) preSensorValue1 = sensorValue1;
-//  if(preSensorValue2 == 0) preSensorValue2 = sensorValue2;
-//  if(preSensorValue3 == 0) preSensorValue3 = sensorValue3;
-//  if(preSensorValue4 == 0) preSensorValue4 = sensorValue4;
-//  filteredSensorValue1 = sensorValue1 / 10 * alpha + (preSensorValue1 * (1 - alpha));
-//  filteredSensorValue2 = sensorValue2 / 10 * alpha + (preSensorValue2 * (1 - alpha));
-//  filteredSensorValue3 = sensorValue3 / 10 * alpha + (preSensorValue3 * (1 - alpha));
-//  filteredSensorValue4 = sensorValue4 / 10 * alpha + (preSensorValue4 * (1 - alpha));
-//  preSensorValue1 = sensorValue1;
-//  preSensorValue2 = sensorValue2;
-//  preSensorValue3 = sensorValue3;
-//  preSensorValue4 = sensorValue4;
-//  if(filteredSensorValue1 > maxValue1){
-//    maxValue1 = filteredSensorValue1;
-//  }else if(filteredSensorValue1 < maxValue1){
-//    minValue1 = filteredSensorValue1;
-//  } 
-//  if(filteredSensorValue2 > maxValue2){
-//    maxValue2 = filteredSensorValue2;
-//  }else if(filteredSensorValue2 < maxValue2){
-//    minValue2 = filteredSensorValue2;
-//  }
-//  if(filteredSensorValue3 > maxValue3){
-//    maxValue3 = filteredSensorValue3;
-//  }else if(filteredSensorValue3 < maxValue3){
-//    minValue3 = filteredSensorValue3;
-//  }
-//  if(filteredSensorValue4 > maxValue4){
-//    maxValue4 = filteredSensorValue4;
-//  }else if(filteredSensorValue4 < maxValue4){
-//    minValue4 = filteredSensorValue4;
-//  }
-//  
-//  
-//  sum1 += filteredSensorValue1;
-//  sum2 += filteredSensorValue2;
-//  sum3 += filteredSensorValue3;
-//  sum4 += filteredSensorValue4;
+
   delay(30);
-//  Serial.println(sensorValue4);
+
   count++;
   if(count == 10){
     count = 0;
